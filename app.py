@@ -4,7 +4,8 @@ import re
 import pandas as pd
 import json
 import base64
-
+from dotenv import load_dotenv
+load_dotenv()
 
 # Initialize Groq client
 # client = Groq(api_key="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")
@@ -137,7 +138,7 @@ with st.sidebar:
     difficulty = st.select_slider("Difficulty Level:", ["Easy", "Medium", "Hard"], value="Medium")
 
     # Number of questions
-    num_questions = st.slider("Number of Questions:", 1, 10, 5)
+    num_questions = st.slider("Number of Questions:", 1, 15, 5)
 
     # Question type
     question_type = st.radio("Question Type:", ["Multiple Choice (MCQ)", "Short Answer"], index=0)
