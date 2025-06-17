@@ -365,10 +365,6 @@ if st.session_state.flashcards:
                     <div class="answer sa-answer">💡 {sa['answer']}</div>
                 </div>
                 """, unsafe_allow_html=True)
-import streamlit as st
-import base64
-import json
-import pandas as pd
 
 # Raw Output (cleaned & enhanced)
 st.markdown("---")
