@@ -4,9 +4,6 @@ import re
 import pandas as pd
 import json
 import base64
-from dotenv import load_dotenv
-load_dotenv()
-
 # Initialize Groq client
 # client = Groq(api_key="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")
 client = Groq(api_key="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")
