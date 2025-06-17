@@ -3,14 +3,12 @@ from groq import Groq
 import re
 import pandas as pd
 import json
-import os
 import base64
-from dotenv import load_dotenv
-load_dotenv()
+
 
 # Initialize Groq client
 # client = Groq(api_key="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")
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = Groq(api_key="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")
 
 # Page config (unchanged)
 st.set_page_config(page_title="Flashcard Generator", page_icon="🧠", layout="centered")
